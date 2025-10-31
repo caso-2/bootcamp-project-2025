@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Contact() {
     return(
@@ -19,7 +20,7 @@ export default function Contact() {
 
                     <button type="submit" className="submit-button">
                         Submit
-                        <img src="images/paper-plane.png" alt="paper plane icon" />
+                        <Image src="/images/paper-plane.png" alt="paper plane icon" width={20} height={20} />
                     </button>
                 </form>
             </div>

@@ -151,7 +151,7 @@ export default function Resume() {
             <p className="entry-info">
                 2023
             </p>
-            <p className="entry-desciption">
+            <p className="entry-desciption"/>
             <ul>
                 <li>
                     Operated a drone to produce high-quality aerial photos and videos.
@@ -160,7 +160,6 @@ export default function Resume() {
                     Ensured FAA compliance and performed equipment setup and troubleshooting.
                 </li>
             </ul>
-            </p>
         </div>
     </section>
 
