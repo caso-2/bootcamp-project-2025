@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "cowsay": "^1.6.0",
-    "typescript": "^5.9.3"
+    "dotenv": "^17.2.3",
+    "mongoose": "^8.19.3"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1"
   }
 }
