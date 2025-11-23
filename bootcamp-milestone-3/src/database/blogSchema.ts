@@ -1,5 +1,12 @@
 import mongoose, { Schema } from "mongoose";
 
+
+export type IComment = {
+    user: string;
+    comment: string;
+    date: Date;
+};
+
 // typescript type (can also be an interface)
 type Blog = {
 	title: string;
@@ -13,12 +20,6 @@ type Blog = {
     source: string;
 	thumbnail: string
 };
-
-interface IComment {
-    user: string;
-    comment: string;
-    date: Date;
-}
 
 // mongoose schema 
 const blogSchema = new Schema<Blog>({
