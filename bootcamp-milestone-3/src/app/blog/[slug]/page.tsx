@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import Image from "next/image";
 import Comment from "@/components/comment";
 import { Key } from "react";
-
+import style from "./slug.module.css"
  
 type Props = {
     params: { slug: string }

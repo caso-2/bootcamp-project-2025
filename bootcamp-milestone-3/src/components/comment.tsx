@@ -1,4 +1,5 @@
 import {IComment} from '../database/blogSchema';
+import style from './comment.module.css'
 
 // type IComment = {
 //     user: string;
@@ -23,7 +24,7 @@ function parseCommentTime(time: Date){
 	*/
     return (<div>
             <p>
-                {new Date(time).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                {new Date(time).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit',})}
             </p>
     </div>
 )
@@ -31,10 +32,10 @@ function parseCommentTime(time: Date){
 
 function Comment({ comment }: CommentProps) {
     return (
-        <div>
-            <h4>{comment.user}</h4>
-            <p>{comment.comment}</p>
+        <div className={style.card}>
+            <h4 className={style.title}>{comment.user}</h4>
             <span>{parseCommentTime(comment.date)}</span>
+            <p>{comment.comment}</p>
         </div>
     );
 }
