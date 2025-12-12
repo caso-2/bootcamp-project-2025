@@ -11,7 +11,6 @@ type Props = {
 }
  
 async function getBlog(slug: string) {
-    console.log("Slug = " + slug)
 
     await connectDB();
     try {
