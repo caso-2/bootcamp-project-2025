@@ -1,0 +1,8 @@
+/* --- Utility card --- */
+.card{ background:#fff; border-radius:var(--radius); box-shadow:var(--shadow-lg);
+  padding:20px; border:1px solid rgba(2,6,23,.06); width: 100%; max-width: 800px; margin-left: 0; margin-right: auto;}
+
+  .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
