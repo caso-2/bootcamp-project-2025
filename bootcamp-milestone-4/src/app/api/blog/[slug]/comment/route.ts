@@ -28,9 +28,9 @@ type IParams = {
         }
 }
 
-export async function POST(req: NextRequest, { params }: IParams) {
+export async function POST(req: NextRequest, context: { params: Promise<{ slug: string }> }) {
 	const body = await req.json()
-	const { slug } = params
+	const { slug } = await context.params
     
 	// validate body
     if (!body.user || !body.comment || !body.date) {
